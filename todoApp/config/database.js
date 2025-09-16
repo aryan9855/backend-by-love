@@ -1,0 +1,19 @@
+const mongoose = require('mongoose');
+//load the environment variables
+require('dotenv').config();
+
+const dbConnect = () => {
+    mongoose.connect(process.env.DATABASE_URL,{
+        useNewUrlParser:true,
+        useUnifiedTopology:true
+    })
+    .then(()=>{
+        console.log('connected to mongodb');
+    })
+    .catch((error)=>{
+        console.log(error);
+        process.exit(1);
+    })
+}
+
+module.exports = dbConnect;
