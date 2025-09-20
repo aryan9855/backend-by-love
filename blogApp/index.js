@@ -18,5 +18,5 @@ app.listen(PORT,()=>{
 })
 
 app.get("/",(req,res) =>{
-    console.log(`<h1> This is Home Page</h1>`)
+    res.send(`<h1> This is Home Page</h1>`)
 })
