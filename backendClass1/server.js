@@ -14,7 +14,7 @@ app.get('/',(request,responce)=>{
     responce.send("hello");
 })
 
-app.post('/api/car',(request,responce)=>{
+app.post('/api/cars',(request,responce)=>{
     const {name , brand } = request.body;
     console.log(name);
     console.log(brand);
