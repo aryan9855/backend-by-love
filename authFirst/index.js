@@ -15,5 +15,5 @@ const user = require("./routes/user");
 app.use("/api/v1", user);
 
 app.listen(PORT, () => {
-    console.log(`🚀 App is running at http://localhost:${PORT}`);
+    console.log(` App is running at ${PORT}`);
 });
