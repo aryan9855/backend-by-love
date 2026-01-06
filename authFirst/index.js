@@ -4,6 +4,8 @@ require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
 
+const cookiePaser = require("cookie-parser");
+app.use(cookiePaser());
 // Middleware
 app.use(express.json());
 
