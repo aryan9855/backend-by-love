@@ -43,7 +43,7 @@ async function uploadFileToCloudinary(file , folder,quality){
 exports.imageUpload = async (req, res)=>{
     try {
         //data fetch
-        const {name , tags , email} = req.body;
+        const {name , tags , email,quality = 80} = req.body;
         console.log(name , tags , email);
 
         const file = req.files.imageFile;
